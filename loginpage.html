@@ -1,0 +1,150 @@
+<html>
+<head>
+<title>login</title>
+<style type="text/css">
+*{
+margin:0px;
+padding:0px;
+box-sizing:border-box;
+}
+
+body{
+background-color:#0000001a;
+}
+
+.main{
+border:2px solid black;
+width:500px;
+height:600px;
+margin:50px auto 0px auto;
+box-shadow:8px 8px 5px 2px grey;
+display:flex;
+justify-content:center;
+align-items:center;
+position:relative;
+background-color:white;
+}
+
+.container{
+width:80%;
+height:80%;
+border:1px solid transparent;
+}
+
+header{
+font-size:xxx-large;
+text-align:center;
+color:#004effd9;
+cursor:pointer;
+}
+
+.sub-container{
+width:100%;
+height:50%;
+margin:20% 0px;
+}
+
+.input-box{
+width:100%;
+height:50px;
+margin:20px 0px;
+    filter: drop-shadow(3px 4px 2px grey);
+margin-bottom:65px;
+}
+
+.input-box input{
+width:100%;
+height:100%;
+}
+
+.input-box label{
+font-family:cursive;
+}
+
+
+
+/*
+#submit{
+width:100%;
+background-color:blue;
+}
+*/
+
+.btn{
+width:110px;
+height:45px;
+border:1px solid black;
+margin-left:55px;
+margin-top:20px;
+padding:1px;
+    filter: drop-shadow(3px 4px 2px grey);
+border-radius:5px;
+cursor:pointer;
+}
+
+.fpass{
+text-align:center;
+font-size:small;
+cursor:pointer;
+position:absolute;
+bottom:20px;
+left:34%;
+color:red;
+}
+
+
+</style>
+</head>
+
+<body>
+<div class="main">
+<div class="container">
+<header>FlipKart</header>
+<div class="sub-container">
+<form>
+<div class="input-box" id="ipname"><label>UserName:</label><input type="text" name="name" id="un"></div>
+<div class="input-box"><label>Password:</label><input type="password" name="password" id="pass"></div>
+<button class="btn" type="button" onclick="check()" > login</button>
+<button class="btn" type="button"> create account</button>
+</form>
+</div>
+<footer><div class="fpass">don't have account? <br> click on create account to sign-up</div>
+
+<footer>
+</div>
+</div>
+</body>
+
+
+<script type="text/javascript">
+
+
+var btn=document.getElementsByClassName('btn')[1];
+var subbtn=document.getElementsByClassName('btn')[0];
+
+btn.addEventListener('click',function(){
+window.location.href="signup.html";
+})
+
+
+//subbtn.addEventListener('click',function(){
+
+function check(){
+
+var un=document.getElementById('un').value;
+var pass=document.getElementById('pass').value;
+
+if(un==="username" && pass==="password"){
+window.location.href="flipkart.html";
+}
+else{
+alert("incorrect username and password");
+}
+
+}
+
+//})
+
+</script>
+
+</html>

@@ -1,0 +1,513 @@
+<html>
+<head>
+
+<!-- <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" media="screen and (min-width: 900px)" href="widescreen.css">
+<link rel="stylesheet" media="screen and (max-width: 600px)" href="smallscreen.css">
+ -->
+<title>flipkart.com</title>
+<style type="text/css">
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+.pointer{cursor:pointer}
+
+.border{border:1px solid transparent;}
+
+.main{
+width:100vw;
+height:100vh;
+background-color:ghostwhite;
+}
+
+.navbar{
+width:100%;
+height:65px;
+background-color:#689eff;
+display:flex;
+border:1px solid black;
+position:sticky;
+top:1px;
+}
+
+.logo{
+
+/*
+width:100px;
+*/
+
+width:8rem;
+height:100%;
+color:black;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:1.2rem;
+font-style:bold;
+font-weight:bold;
+}
+
+
+.search{
+width:60%;
+height:100%;
+display:flex;
+align-items:center;
+margin:auto;
+}
+
+.search-bar{
+width:86%;
+height:50%;
+}
+
+.search-bar input{
+width:100%;
+height:100%;
+}
+
+.lens{
+width:4%;
+height:50%;
+font-size:1.4rem;
+padding:0px 4px;
+background-color:ghostwhite;
+
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border: 1px solid black;
+    border-right: 1px solid transparent;
+}
+
+.search-btn{
+width:10%;
+height:50%;
+font-size:1.05rem;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+border:1px solid black;
+border-left:1px solid transparent;
+
+}
+
+.seller{
+width:15%;
+height:100%;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+.cart{
+width:4rem;
+height:100%;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+
+
+.login{
+
+/*
+width:4%;
+*/
+
+width:4rem;
+height:100%;
+}
+
+.login-symbol{
+width:100%;
+height:50%;
+display:flex;
+align-items:end;
+justify-content:center;
+}
+
+.login-text{
+width:100%;
+height:50%;
+display:flex;
+align-items:start;
+justify-content:center;
+}
+
+/*-------------------------------hero section---------------------------- */
+
+.hero{
+/*
+width:98%;
+height:50%;
+*/
+    width: 98vw;
+    height: 60vmin;
+background-image:url('https://www.gizbot.com/img/2020/12/flipkart-mobiles-year-end-sale-29th-to-31st-december-1609325917.jpg');
+background-size:cover;
+background-position:0% 40%;
+background-repeat:no-repeat;
+border:1px solid black;
+margin:auto;
+margin-top:1%;
+overflow:hidden;
+
+/*
+background-position:0px 85%;;
+background-attachment:fixed;
+*/
+
+animation-name:heroes;
+animation-duration:4s;
+animation-iteration-count:infinite;
+animation-timing-function: step-end
+}
+
+
+@keyframes heroes{
+0%{
+background-image:url('https://www.gizbot.com/img/2020/12/flipkart-mobiles-year-end-sale-29th-to-31st-december-1609325917.jpg');
+}
+50%{
+
+background-image:url('https://cdn.flipshope.com/blog/wp-content/uploads/2023/05/Flipkart-Big-Bachat-Dhamaal-sale.jpg');
+
+/*background-image: url('https://images.fonearena.com/blog/wp-content/uploads/2023/05/Flipkart-Summer-Sale-2023.jpg');*/
+}
+100%{
+background-image:url('https://www.gizbot.com/img/2020/12/flipkart-mobiles-year-end-sale-29th-to-31st-december-1609325917.jpg');
+}
+}
+
+
+.categories{
+
+/*
+width:100%;
+height:55%;
+*/
+
+    height: 36vmin;
+    width: -webkit-fill-available;
+margin:auto;
+background-color:white;
+display:flex;
+margin-bottom:1%;
+}
+
+.categories .cat{
+
+/*
+
+width:20%;
+height:100%;
+background-size:cover;
+
+*/
+
+    height: 36vmin;
+    width: -webkit-fill-available;
+
+border:1px solid black;
+margin:1%;
+background-position:center;
+background-size:101%;
+background-repeat:no-repeat;
+display:flex;
+align-items:flex-end;
+}
+
+.discpt{
+height:3rem;
+width:100%;
+
+/*
+	height:10%;
+*/
+
+    background-color: #0e0e0e;
+    text-align: center;
+    color: white;
+    font-size: 1.1rem;
+}
+footer{
+background-color:black;
+width:100%;
+height:70vmin;
+/*
+height:60%;
+*/
+}
+
+
+.footer{
+width:100%;
+height:100%;
+margin-top:3%;
+display:flex;
+}
+
+.list{
+width:11%;
+height:86%;
+color:ghostwhite;
+text-align:left;
+margin-top:4%;
+text-transform:capitalize;
+}
+
+.list-heading{
+width:100%;
+height:10%;
+margin-bottom:20%;
+font-size:1.08rem;
+text-align:center;
+}
+
+.list-detail{
+width:100%;
+height:85%;
+}
+
+.list-detail a{
+display:block;
+padding:5% 8%;
+font-size:0.85rem;
+text-decoration:none;
+color:white;
+}
+
+
+.footer-detail{
+height:100%;
+width:56%;
+display:flex;
+text-transform:capitalize;
+}
+
+.mail-us{
+border-left:2px solid white;
+width: 50%;
+height: 70%;
+margin-top: 6%;
+}
+
+.mail-head{
+font-size:1.08rem;
+color:ghostwhite;
+text-align:center;
+width:100%;
+height:10%;
+margin-bottom:15%;
+padding-top:2%;
+}
+
+.mail-det{
+text-align:left;
+color:ghostwhite;
+padding:0px 2%;
+white-space:break-spaces;
+}
+
+.roa{
+width:50%;
+height:90%;
+padding-left:3%;
+margin-top:6%;
+}
+
+ .roa-head{
+font-size:1.08rem;
+color:ghostwhite;
+text-align:center;
+width:100%;
+height:10%;
+margin-bottom:12%;
+padding-top:2%;
+}
+
+
+.roa-det{
+text-align:left;
+color:ghostwhite;
+padding:0px 2%;
+white-space:break-spaces;
+}
+
+.copyrights{
+width:100%;
+height:5%;
+color:white;
+background-color:black;
+display:flex;
+justify-content:space-between;
+border-top:1px solid white;
+padding:0px 2%;
+}
+
+.copyrights div:nth-child(5){
+display:flex;
+align-items:center;
+width:30%;
+margin-left:10%;
+}
+
+.copyrights div{
+cursor:pointer;
+}
+
+</style>
+
+</head>
+<body>
+<div class="main">
+
+<div class="navbar border">
+<div class="logo border pointer">FlipKart<br>&nbsp plus + </div>
+<div class="search border">
+<div class="lens pointer"> &#x1F50D </div>
+<div class="search-bar"><input type="text" placeholder="search what you are looking for..."></div>
+<button class="search-btn pointer">search</button>
+</div>
+<div class="seller border pointer">Become a Seller</div>
+<div class="cart pointer">&#x1F6D2; <br> add to cart</div>
+
+<div class="login border pointer" onclick="log()"> <div class="login-symbol"> &#x1F464</div> <div class="login-text">login</div></div>
+</div>
+
+
+<div class="hero"></div>
+
+<div class="categories">
+<div class="cat pointer" style="background-image:url('https://images.samsung.com/is/image/samsung/assets/in/explore/brand/5-best-android-mobile-phones-2022-in-india/banner-desktop-684x723-080422.jpg?$684_N_JPG$');"> <div class="discpt">mobile phones<br>price:50,000rs</div> </div>
+<div class="cat pointer" style="background-image:url('https://content3.jdmagicbox.com/comp/ahmedabad/17/079p757217/catalogue/general-electronics-bavla-ahmedabad-electronic-goods-showrooms-7gjxb28i65.jpg?clr=');"> <div class="discpt">electronics<br>price:10,000rs</div> </div>
+<div class="cat pointer" style="background-image:url('https://static.asianpaints.com/content/dam/asian_paints/blog/wood/benefits-of-wooden-furniture/image-2-asian-paints-m.jpeg');"> <div class="discpt">furnitures<br>price:1000rs</div> </div>
+<div class="cat pointer" style="background-image:url('https://5.imimg.com/data5/SELLER/Default/2023/1/QK/EE/BP/44069440/asus.jpeg');"> <div class="discpt">laptops<br>price:5000rs</div> </div>
+<div class="cat pointer" style="background-image:url('https://static.india.com/wp-content/uploads/2017/05/fashion.jpg?impolicy=Medium_Widthonly&w=400');"> <div class="discpt">fashion<br>price:9999rs</div> </div>
+</div>
+
+
+<div class="categories">
+<div class="cat pointer" style="background-image:url('https://www.time4diamonds.com/wp/wp-content/uploads/2021/09/3.jpg');"> <div class="discpt">watches<br>price:5,00,000rs</div></div>
+<div class="cat pointer" style="background-image:url('https://img.freepik.com/free-photo/top-view-mechanical-tools-arrangement_23-2149552411.jpg');"> <div class="discpt">Hardware tools<br>price:1500rs</div></div>
+<div class="cat pointer" style="background-image:url('https://s3.india.com/travel/wp-content/uploads/2016/07/stationary.jpg');"> <div class="discpt">Stationary items<br>price:50rs</div></div>
+<div class="cat pointer" style="background-image:url('https://www.boat-lifestyle.com/cdn/shop/products/playback-beige_e52cd63e-0efa-427d-af57-28f0ad4e7a4d_1500x.jpg?v=1658829304');"> <div class="discpt">Headphones<br>price:9000rs</div></div>
+<div class="cat pointer" style="background-image:url('https://www.tasteofhome.com/wp-content/uploads/2019/09/peanut-butter-in-jar-and-spoon-shutterstock_1419694937.jpg');"> <div class="discpt">foods<br>price:500rs</div></div>
+</div>
+
+<div class="categories">
+<div class="cat pointer" style="background-image:url('https://cdn.vox-cdn.com/thumbor/nwvCgEEsVPtb4fUpoQ2bys6DMYc=/0x0:1600x959/1200x800/filters:focal(670x165:926x421)/cdn.vox-cdn.com/uploads/chorus_image/image/69260607/FunFilms_DBSBroly_Landing.0.jpg');"> <div class="discpt">dragon ball movies<br>price:500rs</div> </div>
+<div class="cat pointer" style="background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShokC2kQp9KY4xRyJ2y9ddmRYvCddMRKSslxy6ZXI1cta5ghuqMR8spRIW5l5FBGz9XHQ&usqp=CAU');"> <div class="discpt">music album<br>price:900rs</div> </div>
+<div class="cat pointer" style="background-image:url('https://liveyourpassion.in/_readwritedata/_article_images/29071b56-bf69-4eba-8115-264caa5486f7.jpg');"> <div class="discpt">paintings & art work<br>price:1000rs</div> </div>
+<div class="cat pointer" style="background-image:url('https://robbreport.com/wp-content/uploads/2022/11/11-w-Utopia_1.jpg?w=1000');"> <div class="discpt">toys<br>price:5000rs</div> </div>
+<div class="cat pointer" style="background-image:url('https://cutekidstoys.co.in/wp-content/uploads/2022/08/Goku-Super-Saiyan-Action-Figure-hero-pose-image.jpg');"> <div class="discpt">action figures<br>price:9999rs</div> </div>
+</div>
+
+
+<footer>
+<div class="footer">
+<div class="list">
+<div class="list-heading">about</div>
+<div class="list-detail">
+<a href="#">contact us</a>
+<a href="#">about us</a>
+<a href="#">career</a>
+<a href="#">flipkart stories</a>
+<a href="#">press</a>
+<a href="#">flipkart</a>
+<a href="#">wholesale</a>
+<a href="#">clear trip</a>
+<a href="#">corporate</a>
+<a href="#">information</a>
+
+</div>
+</div>
+
+<div class="list">
+<div class="list-heading">help</div>
+<div class="list-detail">
+<a href="#">payment</a>
+<a href="#">shipping</a>
+<a href="#">cancellation &</a>
+<a href="#"> return</a>
+<a href="#">FAQ</a>
+<a href="#">report</a>
+<a href="#">infringemenet</a>
+
+</div>
+</div>
+
+<div class="list">
+<div class="list-heading">consumer policy</div>
+<div class="list-detail">
+<a href="#">cancellation &</a>
+<a href="#">returns</a>
+<a href="#">terms of use</a>
+<a href="#">security</a>
+<a href="#">privacy</a>
+<a href="#">sitemap</a>
+<a href="#">grievance</a>
+<a href="#">redressal</a>
+<a href="#">EPR compliance</a>
+</div>
+</div>
+
+<div class="list">
+<div class="list-heading">social</div>
+<div class="list-detail">
+<a href="#">facebook</a>
+<a href="#">twitter</a>
+<a href="#">youtube</a>
+</div>
+</div>
+
+
+<div class="footer-detail">
+<div class="mail-us">
+<div class="mail-head">mail us:</div>
+<div class="mail-det">flipkart internet private limited,<br>
+buildings alyssa,begonia &<br>
+clove embassy tech village,<br>
+outer ring road, devarabeesanahalli village,<br>
+bengaluru, 560103,<br>
+karnataka, india </div>
+</div>
+
+<div class="roa">
+<div class="roa-head">registraiton office address:</div>
+<div class="roa-det">flipkart internet private limited,<br>
+buildings alyssa,begonia &<br>
+clove embassy tech village,<br>
+outer ring road, devarabeesanahalli village,<br>
+bengaluru, 560103,<br>
+karnataka, india <br>
+CIN:U51109KA2012PTC066107 <br>
+telphone: 044-45614700
+</div>
+</div>
+</div>
+</div>
+
+<div class="copyrights">
+<div>&#x1F4BC; become a seller</div>
+<div>&#x2B50; advertise</div>
+<div>&#x1F381; gift cards</div>
+<div>&#x2753; help center</div>
+<div>&copy 2007-2023 flipkart.com</div>
+<div>&#x1F4B3; visa &#x1F4B3; rupay cards</div>
+</div>
+</footer>
+
+</div>
+</body>
+<script type="text/javascript">
+function log(){
+window.location.href="loginpage.html";
+}
+</script>
+</html>
